@@ -1,0 +1,20 @@
+:root {
+  --color-white: #FFFFFF;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5% !important;
+}
+
+body {
+    font-family: 'Varta', sans-serif;
+    font-size: 1.4rem !important;
+}
