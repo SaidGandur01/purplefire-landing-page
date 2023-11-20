@@ -9,7 +9,10 @@ export default defineNuxtConfig({
     families: {
       'Varta': {
         wght: [100, 200, 300, 400, 500, 600, 700, 800]
-      }
+      },
+      'Merriweather': {
+        wght: [100, 200, 300, 400, 500, 600, 700, 800]
+      },
     }
   }
 })

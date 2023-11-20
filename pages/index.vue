@@ -1,3 +1,11 @@
 <template>
-  <h1>Test</h1>
+  <div class="body-content">
+    <Overview />
+  </div>
 </template>
+<style lang="scss" scoped>
+.body-content {
+  width: 100vw;
+  min-height: 100vh;
+}
+</style>

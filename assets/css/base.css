@@ -1,5 +1,9 @@
 :root {
   --color-white: #FFFFFF;
+  --color-background-page: #F3EEE8;
+
+  --color-brand-primary-100: #A06056;
+  --color-brand-primary-200: rgba(112, 100, 88, 0.90);
 }
 
 *,
@@ -15,6 +19,7 @@ html {
 }
 
 body {
+    scroll-behavior: smooth;
     font-family: 'Varta', sans-serif;
     font-size: 1.4rem !important;
 }
