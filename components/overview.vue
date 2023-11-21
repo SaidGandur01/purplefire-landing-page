@@ -114,30 +114,50 @@
       background-repeat: no-repeat;
 
       &--content {
-        display: none;
+        // display: none;
         padding: 2rem 2rem !important;
         align-items: center;
 
         .introduction,
         .title,
         .information {
-          // color: var(--color-white);
-          // text-align: center;
+          color: var(--color-white);
+          text-align: center;
+        }
+
+        .title {
+          @include font-attributes(
+            3.5rem,
+            --color-white,
+            300,
+            -0.3px,
+            4rem
+          );
+        }
+
+        .information {
+          @include font-attributes(
+            1.8rem,
+            --color-white-200,
+            400,
+            0,
+            2.5rem
+          );
         }
 
         .introduction {
-          // margin-top: 5rem;
-          // margin-bottom: 0;
+          margin-top: 5rem;
+          margin-bottom: 0;
         }
 
         .scroll-down-image {
-          // svg {
-          //   path {
-          //     fill: var(--color-white);
-          //   }
-          //   border-radius: 10rem;
-          //   border: 2px solid var(--color-white);
-          // }
+          svg {
+            path {
+              fill: var(--color-white);
+            }
+            border-radius: 10rem;
+            border: 2px solid var(--color-white);
+          }
         }
       }
     }
