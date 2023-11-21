@@ -110,11 +110,10 @@
         url('/images/overview/overview-image-mobile.png'),
         lightgray 50% / cover no-repeat;
       background-position: center;
-      background-size: 100% 100%;
+      background-size: 120% 110%;
       background-repeat: no-repeat;
 
       &--content {
-        // display: none;
         padding: 2rem 2rem !important;
         align-items: center;
         gap: 7rem;
