@@ -20,7 +20,7 @@
     <div class="second-column"></div>
   </main>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
 @mixin flex-attributes($display, $direction, $align-items, $justify-content) {
   display: flex;
   flex-direction: $direction;
@@ -65,18 +65,46 @@
       padding: 15rem;
 
       .introduction {
-        @include font-attributes(1.4rem, --color-brand-primary-100, 700, 1px, 20px);
+        @include font-attributes(
+          1.4rem,
+          --color-brand-primary-100,
+          700,
+          1px,
+          20px
+        );
         margin-bottom: 2rem;
         text-transform: uppercase;
       }
 
       .title {
-        @include font-attributes(5rem, --color-brand-primary-100, 300, -0.4px, 70px);
+        @include font-attributes(
+          5rem,
+          --color-brand-primary-100,
+          300,
+          -0.4px,
+          70px
+        );
         font-family: 'Merriweather', sans-serif;
       }
 
       .information {
-        @include font-attributes(2.2rem, --color-brand-primary-200, 300, 0px, 30.8px);
+        @include font-attributes(
+          2.2rem,
+          --color-brand-primary-200,
+          300,
+          0px,
+          30.8px
+        );
+      }
+
+      .scroll-down-image {
+        svg {
+          path {
+            fill: var(--color-brand-primary-100);
+          }
+          border-radius: 10rem;
+          border: 2px solid var(--color-brand-primary-100);
+        }
       }
     }
   }
@@ -87,6 +115,55 @@
     background-size: cover;
     background-repeat: no-repeat;
     inset: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    .first-column {
+      background: linear-gradient(
+          0deg,
+          rgba(112, 100, 88, 0.2) 0%,
+          rgba(112, 100, 88, 0.2) 100%
+        ),
+        url('/images/overview/overview-image-mobile.png'),
+        lightgray 50% / cover no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &--content {
+        display: none;
+        padding: 2rem 2rem !important;
+        align-items: center;
+
+        .introduction,
+        .title,
+        .information {
+          // color: var(--color-white);
+          // text-align: center;
+        }
+
+        .introduction {
+          // margin-top: 5rem;
+          // margin-bottom: 0;
+        }
+
+        .scroll-down-image {
+          // svg {
+          //   path {
+          //     fill: var(--color-white);
+          //   }
+          //   border-radius: 10rem;
+          //   border: 2px solid var(--color-white);
+          // }
+        }
+      }
+    }
+
+    .second-column {
+      display: none;
+    }
   }
 }
 </style>
