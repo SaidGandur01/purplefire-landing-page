@@ -50,8 +50,9 @@
     position: relative;
     width: 100%;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     overflow: hidden;
+    list-style-type: none;
   }
 
   .slide {
@@ -81,7 +82,11 @@
   }
 
   img {
-    border-radius: 25px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: var(--color-light-gray);
+    border-radius: 2rem;
   }
 }
 
