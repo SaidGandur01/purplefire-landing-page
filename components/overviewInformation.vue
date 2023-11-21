@@ -2,7 +2,7 @@
   <div id="overview-details" class="overview-information">
     <div class="first-column">
       <div class="first-column--content">
-        <h2>We stay by your <br> side to design your projects</h2>
+        <h2>We stay by your <br> side to design <br class="mobile-hidden"> your projects</h2>
         <span>Find out more <CoreIconsArrowRight/> </span>
       </div>
     </div>
@@ -132,6 +132,10 @@
     .first-column--content {
       padding: 0rem;
       gap: 3.5rem;
+
+      .mobile-hidden {
+        display: none
+      }
 
       h2 {
         @include font-attributes(

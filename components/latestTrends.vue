@@ -1,27 +1,38 @@
 <template>
   <div class="latest-trends">
-    <div class="latest-trends--subscribe">
-      <h3 class="title">Be aware of the latest trends</h3>
-      <span class="information">Stay informed of new trends, but also of our various offers.</span>
-      <span class="find-more">Find out more <CoreIconsArrowRight/> </span>
+    <div class="header">
+      <div class="latest-trends--subscribe">
+        <h3 class="title">Be aware of the latest trends</h3>
+        <span class="information">Stay informed of new trends, but also of our various offers.</span>
+        <span class="find-more">Find out more <CoreIconsArrowRight/> </span>
+      </div>
+      <div class="latest-trends--input">
+        <input type="email" placeholder="email@address.com">
+        <button>
+          <span>Subscribe</span>
+        </button>
+      </div>
     </div>
-    <div class="latest-trends--input">
-      <input type="email" placeholder="email@address.com">
-      <button>
-        <span>Subscribe</span>
-      </button>
+    <div class="carousel-wrapper">
+      <CoreCarousel />
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
 .latest-trends {
-  @include flex-attributes(row, center, space-between);
+  @include flex-attributes(column, center, space-between);
   width: 100%;
   height: 100%;
-  padding: 10rem 15rem 10rem 15rem;
+  padding: 10rem 0;
+
+  .header {
+    @include flex-attributes(row, center, space-between);
+    width: 100%;
+  }
 
   &--subscribe {
     @include flex-attributes(column, flex-start, flex-start);
+    padding-left: 15rem;
     gap: 2rem;
 
     .title {
@@ -62,6 +73,7 @@
 
   &--input {
     @include flex-attributes(row, center, flex-start);
+    padding-right: 15rem;
     gap: 2rem;
     width: 40%;
     height: 100%;
@@ -80,6 +92,10 @@
       padding: 15px 15.095px 10px 15px;
       background: lighten(#F3EEE8, 3%);
       transition: border 0.3s;
+    }
+
+    input::placeholder {
+      color: var(--color-brand-primary-200);
     }
 
     input:focus {
@@ -109,15 +125,28 @@
       }
     }
   }
+
+  .carousel-wrapper {
+    margin: 5rem 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
   .latest-trends {
-    flex-direction: column;
-    padding: 7rem 4rem;
+    padding: 7rem 0;
+
+    .header {
+      flex-direction: column;
+    }
+
+    &--subscribe {
+      padding: 0 4rem;
+    }
 
     &--input {
       flex-direction: column;
+      padding: 0 4rem;
       width: 100%;
       gap: 3rem;
 
