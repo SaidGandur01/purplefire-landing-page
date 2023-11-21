@@ -51,7 +51,7 @@
           --color-brand-primary-100,
           700,
           1px,
-          20px
+          2rem
         );
         margin-bottom: 2rem;
         text-transform: uppercase;
@@ -63,7 +63,7 @@
           --color-brand-primary-100,
           300,
           -0.4px,
-          70px
+          7rem
         );
         font-family: 'Merriweather', sans-serif;
       }
@@ -117,6 +117,7 @@
         // display: none;
         padding: 2rem 2rem !important;
         align-items: center;
+        gap: 7rem;
 
         .introduction,
         .title,
@@ -146,7 +147,7 @@
         }
 
         .introduction {
-          margin-top: 5rem;
+          margin-top: 0rem;
           margin-bottom: 0;
         }
 
