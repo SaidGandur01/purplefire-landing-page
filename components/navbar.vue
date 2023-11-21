@@ -32,12 +32,12 @@
 
     span:first-child {
       @include font-attributes(
-          3.4rem,
-          --color-brand-primary-100,
-          700,
-          2px,
-          25px
-        );
+        3.4rem,
+        --color-brand-primary-100,
+        700,
+        2px,
+        25px
+      );
       font-family: 'Merriweather', sans-serif;
     }
 

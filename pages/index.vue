@@ -4,6 +4,7 @@
     <Overview />
     <OverviewInformation />
     <LatestTrends />
+    <Footer />
   </div>
 </template>
 <style lang="scss" scoped>
