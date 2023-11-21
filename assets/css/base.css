@@ -1,15 +1,16 @@
 :root {
   --color-white: #FFFFFF;
   --color-background-page: #F3EEE8;
-  --color-input-placeholder: rgba(0, 0, 0, 0.45);
 
   --color-brand-primary-100: #A06056;
   --color-brand-primary-200: rgba(112, 100, 88, 0.90);
   --color-brand-primary-300: #706458;
   --color-brand-primary-400: #534B42;
+  --color-brand-primary-500: #978e83;
 
   --color-brand-neutral-100: #000000;
   --color-brand-neutral-200: #121212;
+  --color-brand-neutral-300: rgba(0, 0, 0, 0.45);
 }
 
 *,

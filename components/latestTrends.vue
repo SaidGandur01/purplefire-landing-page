@@ -228,7 +228,7 @@
       }
 
       input::placeholder {
-        color: var(--color-input-placeholder);
+        color: var(--color-brand-neutral-300);
       }
 
       button {

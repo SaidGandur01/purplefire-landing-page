@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div class="first-content">
+    <div class="first-row">
       <div class="first-column">
         <h1>antinc</h1>
       </div>
@@ -44,13 +44,28 @@
         <div class="image-wrapper">
           <img width="242" height="182" src="~/public/images/footer/footer-image.png" alt="footer-image">
         </div>
-        <span>
+        <span class="desktop-visible">
           We’re taking positive steps to reduce our impact on the planet. For us, that means retailing responsibly.
+        </span>
+        <span class="desktop-hidden">
+          We’re taking positive steps to reduce our impact on the planet. For us, that means retailing responsibly. We’ve set a number of goals to get us there. 
         </span>
         <span class="learn-more">Learn more<CoreIconsArrowRight/> </span>
       </div>
     </div>
-    <div class="second-content">
+    <div class="second-row">
+      <CoreIconsFacebook />
+      <CoreIconsTwitter />
+      <CoreIconsLinkedin />
+      <CoreIconsInstagram />
+    </div>
+    <div class="third-row">
+      <span class="legal-name">&copy; 2021 Agence Dnd</span>
+      <div class="terms-conditions">
+        <span>Privacy policy</span>
+        <span>Term of service</span>
+        <span>Language</span>
+      </div>
     </div>
   </div>
 </template>
@@ -60,7 +75,7 @@
   padding: 7rem 15rem;
   background-color: var(--color-background-page);
 
-  .first-content {
+  .first-row {
     @include flex-attributes(row, flex-start, space-between);
 
     h1 {
@@ -122,6 +137,14 @@
         margin-top: 2.2rem;
       }
 
+      .desktop-visible {
+        display: block;
+      }
+
+      .desktop-hidden {
+        display: none;
+      }
+
       span {
         @include font-attributes(
           1.6rem,
@@ -149,13 +172,41 @@
       }
     }
   }
+
+  .second-row {
+    @include flex-attributes(row, flex-start, center);
+    gap: 2rem;
+    margin-top: 7rem;
+    width: 100%;
+  }
+
+  .third-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    .terms-conditions {
+      display: flex;
+      gap: 5rem;
+    }
+
+    span {
+      @include font-attributes(
+        1.8rem,
+        --color-brand-primary-500,
+        400,
+        0,
+        2.5rem
+      );
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .footer {
     padding: 4rem;
 
-    .first-content {
+    .first-row {
       flex-direction: column;
 
       .first-column {
@@ -196,6 +247,56 @@
         }
       }
 
+      .third-column {
+        width: 100%;
+        margin-top: 5rem;
+
+        img {
+          width: 100%;
+        }
+
+        .desktop-visible {
+          display: none;
+        }
+
+        .desktop-hidden {
+          display: block !important;
+        }
+
+        span {
+          @include font-attributes(
+            1.8rem,
+            --color-brand-neutral-300,
+            400,
+            0,
+            2.5rem
+          );
+        }
+      }
+    }
+
+    .second-row {
+      margin: 4rem 0;
+    }
+
+    .third-row {
+      flex-direction: column;
+      margin-top: 0;
+
+      .legal-name {
+        margin-top: 4rem;
+        order: 2;
+      }
+
+      .terms-conditions {
+        flex-wrap: wrap;
+        gap: 1rem;
+        order: 1;
+
+        span {
+          margin-right: 2rem;
+        }
+      }
     }
   }
 }
