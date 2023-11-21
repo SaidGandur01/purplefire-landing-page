@@ -1,75 +1,27 @@
-# Nuxt 3 Minimal Starter
+# Purplefire landing page
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## This project represents a landing page for purplefire and has these considerations
+
+1. Use of the nuxt framework for vuejs, version 3.
+2. The project uses pure html and css strategies, so it could be easily implemented in frameworks such as nextjs, angular, etc.
+3. The integration of a good architecture of code following the best practices.
+4. Creation of reusable components.
+5. For the creation of the sections the main css/scss focuses were flexbox and grid.
+6. The website is completely responsive and has been though for mobile devices as well.
+7. The project follows the design at high level.
+
+## Deployment
+
+The project has been deployed to this link: [vue project](https://purplefire-landing-page.vercel.app/).
 
 ## Setup
 
-Make sure to install the dependencies:
+This project was created using yarn to install all the dependencies, in order to run it locally please follow these steps:
 
-```bash
-# npm
-npm install
+1. yarn install
 
-# pnpm
-pnpm install
+2. yarn build
 
-# yarn
-yarn install
+3. yarn dev
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+The development server runs on `http://localhost:3000`:
