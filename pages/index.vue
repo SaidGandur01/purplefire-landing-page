@@ -1,5 +1,6 @@
 <template>
   <div class="body-content">
+    <Navbar />
     <Overview />
   </div>
 </template>

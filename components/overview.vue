@@ -21,7 +21,7 @@
   </main>
 </template>
 <style lang="scss">
-@mixin flex-attributes($display, $direction, $align-items, $justify-content) {
+@mixin flex-attributes($direction, $align-items, $justify-content) {
   display: flex;
   flex-direction: $direction;
   align-items: $align-items;
@@ -55,10 +55,10 @@
   }
 
   .first-column {
-    @include flex-attributes(flex, column, flex-start, center);
+    @include flex-attributes(column, flex-start, center);
 
     &--content {
-      @include flex-attributes(flex, column, flex-start, center);
+      @include flex-attributes(column, flex-start, center);
       gap: 5rem;
       width: 100%;
       height: 100%;
@@ -112,7 +112,7 @@
   .second-column {
     background: url('/images/overview/overview-image.png');
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     inset: 0;
   }
@@ -129,7 +129,7 @@
         url('/images/overview/overview-image-mobile.png'),
         lightgray 50% / cover no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: 100% 100%;
       background-repeat: no-repeat;
 
       &--content {
