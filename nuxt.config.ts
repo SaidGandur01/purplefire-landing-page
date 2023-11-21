@@ -16,6 +16,9 @@ export default defineNuxtConfig({
       'karla': {
         wght: [100, 200, 300, 400, 500, 600, 700, 800]
       },
+      'Lato': {
+        wght: [100, 200, 300, 400, 500, 600, 700, 800]
+      },
     }
   }
 })

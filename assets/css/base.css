@@ -5,18 +5,20 @@
   --color-brand-primary-100: #A06056;
   --color-brand-primary-200: rgba(112, 100, 88, 0.90);
   --color-brand-primary-300: #706458;
+  --color-brand-primary-400: #534B42;
 }
 
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5% !important;
+  font-size: 62.5% !important;
+  scroll-behavior: smooth;
 }
 
 body {

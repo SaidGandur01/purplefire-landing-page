@@ -1,8 +1,8 @@
 <template>
-  <div class="overview-information">
+  <div id="overview-details" class="overview-information">
     <div class="first-column">
       <div class="first-column--content">
-        <h2>We stay by your <br> side to design <br> your projects</h2>
+        <h2>We stay by your <br> side to design your projects</h2>
         <span>Find out more <CoreIconsArrowRight/> </span>
       </div>
     </div>
@@ -131,6 +131,54 @@
           0,
           2.5rem
         );
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .overview-information {
+    padding: 7rem 4rem;
+    gap: 4rem;
+    flex-direction: column;
+
+    .first-column--content {
+      padding: 0rem;
+      gap: 3.5rem;
+
+      h2 {
+        @include font-attributes(
+          3.5rem,
+          --color-brand-primary-400,
+          400,
+          -0.3px,
+          4rem
+        );
+      }
+
+      span {
+        @include font-attributes(
+          1.7rem,
+          --color-brand-primary-100,
+          900,
+          0.3px,
+          2.5rem
+        );
+        font-family: 'Lato', sans-serif;
+      }
+    }
+
+    .second-column--content {
+      padding: 0;
+
+      .first-row,
+      .second-row {
+        flex-direction: column;
+      }
+
+      .item-description {
+        width: 100%;
+        gap: 1rem;
       }
     }
   }

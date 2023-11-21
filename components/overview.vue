@@ -13,7 +13,9 @@
           trendy, quality furniture
         </h2>
         <div class="scroll-down-image">
-          <CoreIconsScrollDown />
+          <a href="#overview-details">
+            <CoreIconsScrollDown />
+          </a>
         </div>
       </div>
     </div>
