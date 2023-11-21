@@ -6,6 +6,9 @@
   --color-brand-primary-200: rgba(112, 100, 88, 0.90);
   --color-brand-primary-300: #706458;
   --color-brand-primary-400: #534B42;
+
+  --color-brand-neutral-100: #000000;
+  --color-brand-neutral-200: #121212;
 }
 
 *,

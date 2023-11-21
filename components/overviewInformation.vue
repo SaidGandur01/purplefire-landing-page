@@ -74,6 +74,7 @@
           2.5rem
         );
         @include flex-attributes(row, center, flex-start);
+        cursor: pointer;
         gap: 1rem;
         font-family: 'Karla', sans-serif;
       }
