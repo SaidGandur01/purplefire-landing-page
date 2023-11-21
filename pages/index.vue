@@ -3,6 +3,7 @@
     <Navbar />
     <Overview />
     <OverviewInformation />
+    <LatestTrends />
   </div>
 </template>
 <style lang="scss" scoped>

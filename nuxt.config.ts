@@ -4,6 +4,15 @@ export default defineNuxtConfig({
   ssr: false,
   css: ['@/assets/css/base.css'],
   modules: ['@nuxtjs/google-fonts'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/assets/scss/_mixins.scss" as *;'
+        }
+      }
+    },
+  },
   googleFonts: {
     download: true,
     families: {

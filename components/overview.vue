@@ -23,27 +23,6 @@
   </main>
 </template>
 <style lang="scss">
-@mixin flex-attributes($direction, $align-items, $justify-content) {
-  display: flex;
-  flex-direction: $direction;
-  align-items: $align-items;
-  justify-content: $justify-content;
-}
-@mixin font-attributes(
-  $font-size,
-  $font-color,
-  $font-weight,
-  $letter-spacing,
-  $line-height
-) {
-  font-size: $font-size;
-  color: var($font-color);
-  font-weight: $font-weight;
-  letter-spacing: $letter-spacing;
-  line-height: $line-height;
-  font-feature-settings: 'clig' off, 'liga' off;
-}
-
 .main-section {
   display: flex;
   justify-content: space-between;
