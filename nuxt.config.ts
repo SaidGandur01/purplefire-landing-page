@@ -13,6 +13,9 @@ export default defineNuxtConfig({
       'Merriweather': {
         wght: [100, 200, 300, 400, 500, 600, 700, 800]
       },
+      'karla': {
+        wght: [100, 200, 300, 400, 500, 600, 700, 800]
+      },
     }
   }
 })

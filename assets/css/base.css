@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    scroll-behavior: smooth;
-    font-family: 'Varta', sans-serif;
-    font-size: 1.4rem !important;
+  scroll-behavior: smooth;
+  font-family: 'Varta', sans-serif;
+  font-size: 1.4rem !important;
 }
