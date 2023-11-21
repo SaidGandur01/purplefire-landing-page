@@ -110,4 +110,30 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .latest-trends {
+    flex-direction: column;
+    padding: 7rem 4rem;
+
+    &--input {
+      flex-direction: column;
+      width: 100%;
+      gap: 3rem;
+
+      input {
+        margin-top: 3rem;
+      }
+
+      input::placeholder {
+        color: var(--color-input-placeholder);
+      }
+
+      button {
+        align-self: baseline;
+        width: 90%;
+      }
+    }
+  }
+}
 </style>
