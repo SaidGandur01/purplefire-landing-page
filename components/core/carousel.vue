@@ -63,7 +63,7 @@
   }
 
   .slides:hover .slide {
-    animation-play-state: paused;
+    // animation-play-state: paused;
   }
 
   .slide img {
