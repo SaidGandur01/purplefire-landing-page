@@ -205,6 +205,18 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .latest-trends {
+    &--subscribe {
+      padding-left: 7rem;
+    }
+
+    .inspirations {
+      padding: 2rem 7rem;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .latest-trends {
     padding: 7rem 0;

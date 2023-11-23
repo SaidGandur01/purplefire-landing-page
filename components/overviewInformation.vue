@@ -123,6 +123,16 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .overview-information {
+    .first-column {
+      &--content {
+        padding-left: 7rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .overview-information {
     padding: 7rem 4rem;

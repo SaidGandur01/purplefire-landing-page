@@ -106,7 +106,7 @@
       padding-left: 5rem;
       grid-template-columns: repeat(
         auto-fit,
-        minmax(min(100%, 150px), 1fr)
+        minmax(min(100%, 100px), 1fr)
       );
 
       .category {
@@ -253,6 +253,7 @@
 
         img {
           width: 100%;
+          height: 100%;
         }
 
         .desktop-visible {

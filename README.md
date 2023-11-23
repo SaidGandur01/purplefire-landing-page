@@ -9,6 +9,7 @@
 5. For the creation of the sections the main css/scss focuses were flexbox and grid.
 6. The website is completely responsive and has been though for mobile devices as well.
 7. The project follows the design at high level.
+8. Integration of base css file to apply style changes easier in there future.
 
 ## Deployment
 

@@ -28,16 +28,17 @@
 
   .left-items {
     @include flex-attributes(row, center, flex-start);
-    gap: 6rem;
+    // gap: 3.5rem;
 
     span:first-child {
       @include font-attributes(
-        3.4rem,
+        2.5rem,
         --color-brand-primary-100,
         700,
         2px,
         25px
       );
+      margin-right: 3rem;
       font-family: 'Merriweather', sans-serif;
     }
 
@@ -49,7 +50,7 @@
           0,
           25px
         );
-        margin-top: 0.5rem;
+      margin: 0.5rem 2.5rem 0 0;
       text-transform: capitalize;
     }
   }
@@ -58,6 +59,36 @@
     .image-container {
       .menu-image {
         display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1420px) {
+  .navbar {
+    .left-items {
+      span:first-child {
+        font-size: 2.1rem;
+      }
+
+      span:not(:first-child) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 2rem 7rem 2rem 7rem;
+    .left-items {
+      span:first-child {
+        font-size: 2rem;
+      }
+
+      span:not(:first-child) {
+        font-size: 1.2rem;
+        margin: 0.5rem 2rem 0 0;
       }
     }
   }

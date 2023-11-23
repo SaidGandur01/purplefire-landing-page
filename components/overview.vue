@@ -99,6 +99,16 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .main-section {
+    .first-column {
+      &--content {
+        padding: 15rem 7rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .main-section {
     .first-column {
